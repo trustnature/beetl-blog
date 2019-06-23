@@ -1,0 +1,12 @@
+<%
+layout("layout.html",{title:'this is a title'}){
+%>
+this is content!!
+<%}%>
+
+<%
+include("include.html"){
+	print("can not see");
+}
+print("can see");
+%>

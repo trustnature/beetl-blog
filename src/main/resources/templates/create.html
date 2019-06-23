@@ -1,0 +1,26 @@
+<%
+layout("/common/layout.html",{title:"新建博客",notShow:true}){
+%>
+
+<div class="widewrapper main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 clean-superblock" id="contact">
+                    <h2>Contact</h2>
+                    
+                    <form action="${ctxPath}/saveBlog" method="post" accept-charset="utf-8" class="contact-form">
+                        <input type="text" name="title" id="contact-name" placeholder="title" class="form-control input-lg">
+                        <input type="text" name="category" id="contact-email" placeholder="category" class="form-control input-lg">
+                        <input type="text" name="img"  placeholder="图片地址" class="form-control input-lg">
+
+                        <textarea rows="10" name="content" id="contact-body" placeholder="Your Content" class="form-control input-lg"></textarea>
+
+                        <div class="buttons clearfix">
+                            <button type="submit" class="btn btn-xlarge btn-clean-one">Submit</button>
+                        </div>                    
+                    </form>
+                </div>
+            </div>        
+        </div>
+    </div>
+<%}%>

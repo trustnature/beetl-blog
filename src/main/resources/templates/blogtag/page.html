@@ -1,0 +1,13 @@
+<div class="paging">
+    <%if(page.pageNumber <= 1){%>
+    <a href="#">首页</i></a>
+    <%}else{%>
+    <a href="${ctxPath}/${action!}?pageNumber=${page.pageNumber-1}${condition!}">上一页</i></a>
+    <%}%>
+
+    <%if(page.pageNumber >= page.totalPage){%>
+    <a href="#">末尾页</i></a>
+    <%}else{%>
+    <a href="${ctxPath}/${action!}?pageNumber=${page.pageNumber+1}${condition!}">下一页</i></a>
+    <%}%>
+</div>
